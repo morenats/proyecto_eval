@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   //carga perezosa para ir al modulo producto
   {
-    path:"",loadChildren:()=>import('./modules/producto/producto.module').then(m=>m.ProductoModule)
+    path:"",loadChildren:()=>import('./modules/eventos/eventos.module').then(m=>m.EventosModule)
   }
 ];
 
