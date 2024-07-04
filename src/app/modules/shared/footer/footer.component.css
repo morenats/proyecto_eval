@@ -1,0 +1,46 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.pie-de-pagina {
+    font-size: 14px;
+}
+
+/* Opcional: Estilos para el enlace en el pie de página */
+.pie-de-pagina a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.pie-de-pagina a:hover {
+    text-decoration: underline;
+}
+.redes-sociales {
+    margin-top: 10px;
+}
+
+.icono-instagram,
+.icono-facebook,
+.icono-wpp {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #fff; /* Cambia el color según tus preferencias */
+}
+
+/* Cambia el color del icono cuando se pasa el cursor sobre él */
+.icono-instagram:hover,
+.icono-facebook:hover {
+    color: #e4405f; /* Cambia el color de resaltado */
+}

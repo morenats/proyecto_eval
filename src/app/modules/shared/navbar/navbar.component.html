@@ -1,28 +1,40 @@
 <mat-toolbar>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span id=""><img src="../../../../assets/mood_live_logo_negro.png" alt=""></span>
-    <!-- boton para ir al inicio -->
-    <button id="menuInicio" mat-button routerLink="/inicio">inicio</button>
+  <button id="menuSecciones" mat-icon-button class="example-icon" [matMenuTriggerFor]="secciones">
+    <mat-icon>menu</mat-icon>
+</button>
+  <!-- para que el menu se colapse cuando la pantalla es chica -->
+  <mat-menu #secciones="matMenu">
+    <button mat-menu-item  routerLink="/inicio">inicio</button>
+    <button mat-menu-item [matMenuTriggerFor]="eventos">Productos</button>
+</mat-menu>
+    <!-- logo -->
+  <span id="logo">
+    <a class="navbar-brand" href="#">
+      <img src="../../../../assets/mood_live_logo_negro.png" alt="Bootstrap" width="80" height="70">
+    </a>
+  </span>
 
-    <button id="menuProducto" mat-button [matMenuTriggerFor]="eventos">Eventos</button>
-    <mat-menu #eventos="matMenu">   
-        <button mat-menu-item routerLink="/teatro">Teatro</button>
-        <button mat-menu-item routerLink="/conciertos">Conciertos</button>
-        <button mat-menu-item routerLink="/fiestas">Fiestas</button>
-    </mat-menu>
+  <!-- boton para ir al inicio -->
+  <button id="menuInicio" mat-button routerLink="/inicio">inicio</button>
 
-    <span class="example-spacer"></span>
-    <!-- inicio de sesion y formulario de registro -->
-    <button mat-icon-button [matMenuTriggerFor]="usuario"><mat-icon>person</mat-icon></button>
-    <mat-menu #usuario="matMenu">
-        <button mat-menu-item routerLink="/registro">Registrarse</button>
-        <button mat-menu-item routerLink="/iniciosesion">Iniciar Sesion</button>
-    </mat-menu>
 
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>share</mat-icon>
-    </button>
-  </mat-toolbar>
-  
+  <!-- seccion para los eventos -->
+  <button id="menuProducto" mat-button [matMenuTriggerFor]="eventos">Eventos</button>
+  <mat-menu #eventos="matMenu">
+    <button mat-menu-item routerLink="/teatro">Teatro</button>
+    <button mat-menu-item routerLink="/conciertos">Conciertos</button>
+    <button mat-menu-item routerLink="/fiestas">Fiestas</button>
+  </mat-menu>
+
+  <span class="example-spacer"></span>
+  <!-- inicio de sesion y formulario de registro -->
+  <button mat-icon-button [matMenuTriggerFor]="usuario"><mat-icon>person</mat-icon></button>
+  <mat-menu #usuario="matMenu">
+    <button mat-menu-item routerLink="/registro">Registrarse</button>
+    <button mat-menu-item routerLink="/iniciosesion">Iniciar Sesion</button>
+  </mat-menu>
+
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+</mat-toolbar>
