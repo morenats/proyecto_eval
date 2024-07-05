@@ -6,6 +6,9 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { CarruselComponent } from './componentes/carrusel/carrusel.component';
 import { DestacadosComponent } from './componentes/destacados/destacados.component';
 
+//material
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +18,14 @@ import { DestacadosComponent } from './componentes/destacados/destacados.compone
   ],
   imports: [
     CommonModule,
-    InicioRoutingModule
+    InicioRoutingModule,
+    MatTabsModule
+  ],
+  exports: [
+    InicioComponent,
+    CarruselComponent,
+    DestacadosComponent,
+    MatTabsModule
   ]
 })
 export class InicioModule { }

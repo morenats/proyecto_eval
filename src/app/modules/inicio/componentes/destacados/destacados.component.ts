@@ -14,10 +14,51 @@ export class DestacadosComponent {
     this.info = [
       {
         id:"",
-        foto:"",
-        alt:"",
-        nombre:"",
-        fecha:""
+        foto:"../../../../../assets/destacados/elzar.jpg",
+        alt:"el zar",
+        nombre:"El zar",
+        fecha:"6 de julio",
+        tipo:"concierto",
+      },
+      {
+        id:"",
+        foto:"../../../../../assets/destacados/ivannoble.jpg",
+        alt:"el zar",
+        nombre:"El zar",
+        fecha:"6 de julio",
+        tipo:"concierto",
+      },
+      {
+        id:"",
+        foto:"../../../../../assets/destacados/ysya.jpg",
+        alt:"el zar",
+        nombre:"El zar",
+        fecha:"6 de julio",
+        tipo:"concierto",
+      },
+      {
+        id:"",
+        foto:"../../../../../assets/destacados/fiestafiebre.jpg",
+        alt:"el zar",
+        nombre:"El zar",
+        fecha:"6 de julio",
+        tipo:"fiestas",
+      },
+      {
+        id:"",
+        foto:"../../../../../assets/destacados/fiestaatp.jpg",
+        alt:"el zar",
+        nombre:"El zar",
+        fecha:"6 de julio",
+        tipo:"fiestas",
+      },
+      {
+        id:"",
+        foto:"../../../../../assets/destacados/fiestabatalladjs.jpg",
+        alt:"el zar",
+        nombre:"El zar",
+        fecha:"6 de julio",
+        tipo:"fiestas",
       },
     ]
   }

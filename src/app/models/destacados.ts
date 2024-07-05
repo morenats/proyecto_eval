@@ -5,4 +5,5 @@ export interface Destacados {
     alt:string;
     nombre:string;
     fecha:string;
+    tipo:string;
 }

@@ -28,19 +28,14 @@ footer {
     text-decoration: underline;
 }
 .redes-sociales {
-    margin-top: 10px;
+    display: flex; /* Usa flexbox para alinear los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
 }
-
-.icono-instagram,
-.icono-facebook,
-.icono-wpp {
+.redes-sociales a {
+    margin: 0 5px; /* Añade un pequeño margen entre los iconos */
+}
+.icono{
     font-size: 24px;
-    margin-right: 10px;
+    margin-right: 5%;
     color: #fff; /* Cambia el color según tus preferencias */
-}
-
-/* Cambia el color del icono cuando se pasa el cursor sobre él */
-.icono-instagram:hover,
-.icono-facebook:hover {
-    color: #e4405f; /* Cambia el color de resaltado */
 }

@@ -1,1 +1,56 @@
-<p>destacados works!</p>
+<mat-tab-group>
+    <mat-tab id="tab" label="Conciertos">
+        <div class="container px-4 text-center">
+            <div class="row gx-5">
+                <div class="col" *ngFor="let i of info">
+                    <div class="p-3" *ngIf="i.tipo=='concierto'">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{{i.foto}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{i.nombre}}</h5>
+                                <p class="card-text">{{i.fecha}}</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-tab>
+    <mat-tab label="Fiestas">
+        <div class="container px-4 text-center">
+            <div class="row gx-5">
+                <div class="col" *ngFor="let i of info">
+                    <div class="p-3" *ngIf="i.tipo=='fiestas'">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{{i.foto}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{i.nombre}}</h5>
+                                <p class="card-text">{{i.fecha}}</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-tab>
+    <mat-tab label="Teatro">
+        <div class="container px-4 text-center">
+            <div class="row gx-5">
+                <div class="col" *ngFor="let i of info">
+                    <div class="p-3" *ngIf="i.tipo=='teatro'">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{{i.foto}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{i.nombre}}</h5>
+                                <p class="card-text">{{i.fecha}}</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-tab>
+</mat-tab-group>
