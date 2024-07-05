@@ -14,6 +14,9 @@ const routes: Routes = [
   //carga perezosa para ir al modulo producto
   {
     path:"",loadChildren:()=>import('./modules/eventos/eventos.module').then(m=>m.EventosModule)
+  },
+  {
+    path:"",loadChildren:()=>import('./modules/autentificacion/autentificacion.module').then(m=>m.AutentificacionModule)
   }
 ];
 

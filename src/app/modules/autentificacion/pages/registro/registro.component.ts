@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./registro.component.css']
 })
 export class RegistroComponent {
-
+  //este hide es para el input de contraseña 
+  hide = true;
 }
