@@ -1,3 +1,44 @@
 #tab{
     color: rgb(255, 255, 255) !important;
 }
+
+.card{
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+}
+
+.boton{
+    color: aliceblue;
+    border-radius: 5px;
+    border-color: blueviolet;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 576px) {
+    .h5-responsive {
+        font-size: 1.8rem; 
+    }
+    .p-responsive {
+        font-size:1.2rem;
+    }
+}
+ /* Ajuste para pantallas medianas */
+@media (min-width: 577px) and (max-width: 768px) {
+    .h5-responsive {
+        font-size: 0.8rem;
+    }
+    .p-responsive {
+        font-size: 0.5rem; 
+    }
+}
+/* Ajuste para pantallas grandes */
+@media (min-width: 769px) {
+    .h5-responsive {
+        font-size: 1.75rem; 
+    }
+    .p-responsive {
+        font-size: 1.125rem; 
+    }
+}
+
