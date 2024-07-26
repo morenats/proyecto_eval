@@ -8,24 +8,30 @@ import { DestacadosComponent } from './componentes/destacados/destacados.compone
 
 //material
 import {MatTabsModule} from '@angular/material/tabs';
+import { FotosComponent } from './componentes/fotos/fotos.component';
 
+//angular
+import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
 
 @NgModule({
   declarations: [
     InicioComponent,
     CarruselComponent,
-    DestacadosComponent
+    DestacadosComponent,
+    FotosComponent
   ],
   imports: [
     CommonModule,
     InicioRoutingModule,
-    MatTabsModule
+    MatTabsModule,
+    NgxPaginationModule
   ],
   exports: [
     InicioComponent,
     CarruselComponent,
     DestacadosComponent,
-    MatTabsModule
+    MatTabsModule,
+    NgxPaginationModule
   ]
 })
 export class InicioModule { }
