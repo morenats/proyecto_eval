@@ -15,7 +15,7 @@ export class FotosComponent {
         {
           uid:"",
           foto:"",
-          alt:""
+          alt:"pagina1"
         },
         {
           uid:"",

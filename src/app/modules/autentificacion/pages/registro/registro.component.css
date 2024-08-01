@@ -3,6 +3,13 @@
     padding: 10px;
     text-align: center;
     justify-content: center;
+    width: 50%;
+}
+#title{
+    color: white;
+}
+.icon{
+    color: white;
 }
 .boton{
     width: 120px;
