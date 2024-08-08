@@ -3,13 +3,17 @@
     padding: 10px;
     text-align: center;
     justify-content: center;
-    width: 50%;
+    width: 50%; 
+}
+.input{
+    color:rgba(255, 255, 255, 0.5);
 }
 #title{
     color: white;
 }
 .icon{
     color: white;
+    color:rgba(255, 255, 255, 0.5);
 }
 .boton{
     width: 120px;

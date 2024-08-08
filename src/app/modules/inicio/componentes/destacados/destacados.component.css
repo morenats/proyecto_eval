@@ -1,6 +1,9 @@
 #tab{
     color: rgb(255, 255, 255) !important;
 }
+.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label{
+    color: white !important;
+}
 
 .card{
     background-color: black;
